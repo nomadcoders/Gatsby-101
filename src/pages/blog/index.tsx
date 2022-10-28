@@ -15,9 +15,10 @@ export default function Blog({ data }: PageProps<Queries.BlogPostsQuery>) {
                 {file.frontmatter?.author} in: {file.frontmatter?.category}
               </h5>
               <h6>{file.frontmatter?.date}</h6>
-              <hr />
+
               <p>{file.excerpt}</p>
             </Link>
+            <hr />
           </article>
         ))}
       </section>
