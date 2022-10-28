@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 
 interface ILayoutProps {
-  children: any;
+  children?: any;
   title: string;
 }
 
