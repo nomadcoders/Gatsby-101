@@ -8,7 +8,7 @@ interface ILayoutProps {
 
 export default function Layout({ children, title }: ILayoutProps) {
   return (
-    <div>
+    <div className="container">
       <nav>
         <ul>
           <li>

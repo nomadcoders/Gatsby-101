@@ -6,7 +6,7 @@ import Seo from "../../components/Seo";
 export default function Blog({ data }: PageProps<Queries.BlogPostsQuery>) {
   return (
     <Layout title="Blog">
-      <section>
+      <section className="grid">
         {data.allMdx.nodes.map((file, index) => (
           <article key={index}>
             <Link to={`/blog/${file.frontmatter?.slug}`}>
@@ -18,7 +18,6 @@ export default function Blog({ data }: PageProps<Queries.BlogPostsQuery>) {
 
               <p>{file.excerpt}</p>
             </Link>
-            <hr />
           </article>
         ))}
       </section>
